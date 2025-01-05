@@ -1,0 +1,269 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #f7f9fd;
+    font-size: 16px;
+    color: #363d55;
+  }
+  
+  .wrapper {
+    width: 90%;
+    max-width: 45em;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: #ffffff;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    border-radius: 0.6em;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .wrapper h3 {
+    color: #363d55;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.2em;
+    font-size: 1.6em;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #587ef4, #4662c7);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .sub-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container input {
+    width: 100%;
+    padding: 0.8em 0.5em;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.6em;
+    color: #414a67;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 1em;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .container input:focus {
+    border-color: #587ef4;
+  }
+  
+  .total-amount-container,
+  .user-amount-container {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 0.6em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.1);
+  }
+  
+  .output-container {
+    background-color: #587ef4;
+    color: #ffffff;
+    border-radius: 0.6em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.1);
+    margin-top: 2em;
+    padding: 1.5em;
+    text-align: center;
+  }
+  
+  .output-container p {
+    font-weight: 600;
+    margin-bottom: 0.8em;
+    font-size: 1.2em;
+  }
+  
+  .output-container span {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  
+  .submit {
+    font-size: 1.1em;
+    margin-top: 1em;
+    background-color: #587ef4;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.8em 1.4em;
+    border-radius: 0.6em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #4662c7;
+  }
+  
+  .list {
+    background-color: #ffffff;
+    padding: 2em 1.5em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    border-radius: 0.6em;
+  }
+  
+  .sublist-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    border-left: 0.3em solid #587ef4;
+    margin-bottom: 1.2em;
+    background-color: #f7f9fd;
+    border-radius: 0.6em;
+  }
+  
+  .product {
+    font-weight: 500;
+    color: #363d55;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 180px;
+  }
+  
+  .amount {
+    color: #587ef4;
+    font-weight: 600;
+  }
+  
+  .date-time {
+    font-size: 0.9em;
+    color: #a0a0a0;
+  }
+  
+  .icons-container {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .edit,
+  .delete {
+    background: transparent;
+    border: none;
+    color: #587ef4;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .edit:hover,
+  .delete:hover {
+    color: #4662c7;
+    text-decoration: underline;
+  }
+  
+  .delete {
+    color: red;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablet and below */
+  @media screen and (max-width: 900px) {
+    .wrapper {
+      padding: 1.2em;
+    }
+  
+    .sub-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5em;
+    }
+  
+    .container input {
+      padding: 0.8em;
+    }
+  
+    .output-container {
+      padding: 1em;
+    }
+  
+    .submit {
+      font-size: 1em;
+      padding: 0.7em 1.2em;
+    }
+  
+    .sublist-content {
+      flex-direction: column;
+      padding: 1.5em;
+    }
+  
+    .icons-container {
+      margin-top: 1em;
+      gap: 0.8em;
+    }
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      font-size: 14px;
+      padding: 1em;
+      width: 100%;
+    }
+  
+    .sub-container {
+      grid-template-columns: 1fr;
+      gap: 1em;
+    }
+  
+    .container input {
+      padding: 0.8em;
+    }
+  
+    .output-container {
+      padding: 1em;
+    }
+  
+    .submit {
+      font-size: 1em;
+      padding: 0.7em 1.2em;
+    }
+  
+    .sublist-content {
+      flex-direction: column;
+      padding: 1.5em;
+    }
+  
+    .product {
+      font-size: 1.1em;
+    }
+  
+    .amount {
+      font-size: 1.2em;
+    }
+  
+    .date-time {
+      font-size: 0.8em;
+    }
+  
+    .icons-container {
+      margin-top: 1em;
+      gap: 0.8em;
+    }
+    .delete{
+        margin-top: 10px;
+    }
+  }
+  
