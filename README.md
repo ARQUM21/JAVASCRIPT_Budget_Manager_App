@@ -31,7 +31,7 @@ The **Budget Manager App** is a comprehensive solution designed to help individu
      - **Total Expenses**
      - **Remaining Balance**
    - These values update in real-time as you add more expenses.
-   - 
+     
 ## Contribution
 
 Feel free to fork this project and submit a pull request with any improvements or bug fixes! Contributions are always welcome.
