@@ -11,13 +11,28 @@
     font-size: 16px;
     color: #363d55;
   }
+  .app-title {
+    text-align: center;
+    font-size: 3em; 
+    font-weight: bold;
+    color: #fff; 
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding: 10px 0; 
+    background: linear-gradient(135deg, #283593, #4662c7); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px; 
+}
+
   
   .wrapper {
     width: 90%;
     max-width: 45em;
     margin: 2em auto;
     padding: 1.5em;
-    background-color: #ffffff;
+    background: linear-gradient(135deg, #283593, #4662c7);
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     border-radius: 0.6em;
   }
@@ -33,7 +48,7 @@
     margin-bottom: 1.2em;
     font-size: 1.6em;
     letter-spacing: 0.5px;
-    background: linear-gradient(135deg, #587ef4, #4662c7);
+    background: linear-gradient(135deg, #283593, #4662c7);
     -webkit-background-clip: text;
     color: transparent;
   }
@@ -68,7 +83,7 @@
   }
   
   .container input:focus {
-    border-color: #587ef4;
+    border-color: #283593;
   }
   
   .total-amount-container,
@@ -80,11 +95,11 @@
   }
   
   .output-container {
-    background-color: #587ef4;
+    background: linear-gradient(135deg, #283593, #4662c7);
     color: #ffffff;
     border-radius: 0.6em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.1);
-    margin-top: 2em;
+    margin-top: 1em;
     padding: 1.5em;
     text-align: center;
   }
@@ -103,7 +118,7 @@
   .submit {
     font-size: 1.1em;
     margin-top: 1em;
-    background-color: #587ef4;
+    background: linear-gradient(135deg, #283593, #4662c7);
     border: none;
     outline: none;
     color: #ffffff;
@@ -114,7 +129,7 @@
   }
   
   .submit:hover {
-    background-color: #4662c7;
+    background: linear-gradient(135deg, #283593, #4662c7);
   }
   
   .list {
@@ -122,6 +137,7 @@
     padding: 2em 1.5em;
     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
     border-radius: 0.6em;
+    margin-top: 1em;
   }
   
   .sublist-content {
@@ -129,7 +145,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    border-left: 0.3em solid #587ef4;
+    border-left: 0.3em solid #283593;
     margin-bottom: 1.2em;
     background-color: #f7f9fd;
     border-radius: 0.6em;
@@ -138,13 +154,16 @@
   .product {
     font-weight: 500;
     color: #363d55;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; 
     overflow: hidden;
-    max-width: 180px;
-  }
+    max-width: 180px; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+}
   
   .amount {
-    color: #587ef4;
+    color: #283593;
     font-weight: 600;
   }
   
@@ -162,7 +181,7 @@
   .delete {
     background: transparent;
     border: none;
-    color: #587ef4;
+    color: #283593;
     cursor: pointer;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
@@ -170,7 +189,7 @@
   
   .edit:hover,
   .delete:hover {
-    color: #4662c7;
+    color: #283593;
     text-decoration: underline;
   }
   
@@ -178,10 +197,11 @@
     color: red;
   }
   
-  /* Media Queries for Responsiveness */
-  
   /* Tablet and below */
   @media screen and (max-width: 900px) {
+    .app-title {
+      font-size: 2.5em; 
+  }
     .wrapper {
       padding: 1.2em;
     }
@@ -217,6 +237,9 @@
   
   /* Mobile */
   @media screen and (max-width: 600px) {
+    .app-title {
+      font-size: 2em; 
+  }
     .wrapper {
       font-size: 14px;
       padding: 1em;
@@ -247,20 +270,25 @@
     }
   
     .product {
-      font-size: 1.1em;
+      font-size: 1.1em ;
     }
   
     .amount {
       font-size: 1.2em;
+      margin-top: 8px;
     }
   
     .date-time {
       font-size: 0.8em;
+      margin-top: 8px;
     }
   
     .icons-container {
       margin-top: 1em;
       gap: 0.8em;
+    }
+    .edit{
+      margin-top: 8px;
     }
     .delete{
         margin-top: 10px;
